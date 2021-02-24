@@ -58,37 +58,37 @@ function Footer() {
                 <div className="footer__helpYou">
                     <h2>LET US HELP YOU</h2>
                         <ul>
-                        <Link to="/"><li>Help Center</li></Link>
-                        <Link to="/"> <li>Contact us</li></Link>
-                        <Link to="/"><li>How to shop on Amazon</li></Link>
-                        <Link to="/"><li>Shipping and delivery</li></Link>
-                        <Link to="/"><li>Corporate and Bulk Purchase</li></Link>
-                        <Link to="/"> <li>COVID-19 Health Kit</li></Link>
-                        <Link to="/"><li>Advertise with Amazon</li></Link>
-                        <Link to="/"><li>Amazon Logistics Services</li></Link>
-                        <Link to="/"><li>Report a Product</li></Link>
+                        <li> <Link to="/"> Help Center</Link></li>
+                         <li><Link to="/">Contact us</Link></li>
+                        <li><Link to="/">How to shop on Amazon</Link></li>
+                        <li><Link to="/">Shipping and delivery</Link></li>
+                        <li><Link to="/">Corporate and Bulk Purchase</Link></li>
+                         <li><Link to="/">COVID-19 Health Kit</Link></li>
+                        <li><Link to="/">Advertise with Amazon</Link></li>
+                        <li><Link to="/">Amazon Logistics Services</Link></li>
+                        <li><Link to="/">Report a Product</Link></li>
                     </ul>
                 </div>
                 {/*footer about amazon*/}
                 <div className="footer__about">
                     <h2>ABOUT AMAZON</h2>
                     <ul>
-                        <Link><li>About us</li></Link>
-                        <Link><li>Amazon Careers</li></Link>
-                        <Link><li>Amazon Express</li></Link>
-                        <Link><li>Terms and Conditions</li></Link>
-                        <Link><li>Privacy Policy</li></Link>        
+                        <li><Link>About us</Link></li>
+                        <li><Link>Amazon Careers</Link></li>
+                        <li><Link>Amazon Express</Link></li>
+                        <li><Link>Terms and Conditions</Link></li>
+                        <li><Link>Privacy Policy</Link></li>        
                         </ul>
                     </div>
                 {/*footer make money with amazon*/}
                 <div className="footer__makeMoney">
                     <h2>MAKE MONEY WITH AMAZON</h2>
                     <ul>
-                        <Link><li>Sell on Amazon</li></Link>
-                        <Link><li>Become a Sales Consultant</li></Link>
-                        <Link><li>Become a Logistics Service Partner</li></Link>
-                        <Link><li>Amazon City Partner Program</li></Link>
-                        <Link><li>Order & Pick Up Point Application</li></Link>
+                        <li><Link>Sell on Amazon</Link></li>
+                        <li><Link>Become a Sales Consultant</Link></li>
+                        <li><Link>Become a Logistics Service Partner</Link></li>
+                        <li><Link>Amazon City Partner Program</Link></li>
+                        <li><Link>Order & Pick Up Point Application</Link></li>
                         </ul>
                 </div>
                 {/*footer international*/}
@@ -96,20 +96,20 @@ function Footer() {
                     <h2>AMAZON INTERNATIONAL</h2>
                     <div className="footer__container">
                         <ul className="footer__left">
-                            <Link><li>London</li></Link>
-                            <Link><li>America</li></Link>
-                            <Link><li>China</li></Link>
-                            <Link><li>Germany</li></Link>
-                            <Link><li>Africa</li></Link>
+                            <li><Link>London</Link></li>
+                            <li><Link>America</Link></li>
+                            <li><Link>China</Link></li>
+                            <li><Link>Germany</Link></li>
+                            <li><Link>Africa</Link></li>
 
                         </ul>
 
                         <ul className="footer__right">
-                            <Link><li>Mexico</li></Link>
-                            <Link><li>Brazil</li></Link>
-                            <Link><li>Kenya</li></Link>
-                            <Link><li>South Africa</li></Link>
-                            <Link><li>Algeria</li></Link>
+                            <li><Link>Mexico</Link></li>
+                            <li><Link>Brazil</Link></li>
+                            <li><Link>Kenya</Link></li>
+                            <li><Link>South Africa</Link></li>
+                            <li><Link>Algeria</Link></li>
                         </ul>
                     </div>
                 </div>

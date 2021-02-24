@@ -161,7 +161,7 @@
     
 }
 
-.footer__helpYou ul a li{
+.footer__helpYou ul li a{
     color: white;
     font-size: 14px;
     text-decoration: none;
@@ -181,9 +181,10 @@
     list-style: none;
 }
 
-.footer__about ul li {
+.footer__about ul li a {
     color: white;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .footer__makeMoney h2 {
@@ -199,9 +200,10 @@
     list-style: none;
 }
 
-.footer__makeMoney ul li {
+.footer__makeMoney ul li a {
     color: white;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .footer__international h2 {
@@ -216,9 +218,10 @@ margin-top: 10px;
     list-style: none;
 }
 
-.footer__international ul li {
+.footer__international ul li a {
     color: white;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .footer__container {

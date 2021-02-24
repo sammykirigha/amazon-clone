@@ -1,6 +1,7 @@
-import React, { useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import './Payment.css';
 import axios from '../../axios';
+import { db } from '../../firebase'
 import { Link, useHistory } from 'react-router-dom';
 import CheckoutProduct from '../checkoutProduct/CheckoutProduct';
 import { useStateValue } from '../../stateProvider/StateProvider'
@@ -13,23 +14,23 @@ function Payment() {
     const history = useHistory();
     const stripe = useStripe();
     const elements = useElements();
-    
-    const [{ basket, user }, dispach] = useStateValue();
-    
+
+    const [{ basket, user }, dispatch] = useStateValue();
+
     const [processing, setProcessing] = useState("");
     const [succeeded, setSecceeded] = useState(true);
     const [error, setError] = useState(null);
     const [disabled, setDisabled] = useState(true);
     const [clientSecret, setClientSecret] = useState(true)
 
-    
+
 
     useEffect(() => {
         //generate the special stripe secret
         const getClientSecret = async () => {
             const response = await axios({
                 method: 'post',
-                //stripe expects the total in a currencies submits
+                //stripe expects the total in a currencies subunits
                 url: `/payments/create?total=${getProductsTotal(basket) * 100}`
             });
             setClientSecret(response.data.clientSecret)
@@ -50,12 +51,31 @@ function Payment() {
             }
         }).then(({ paymentIntent }) => {
             //paymentIntent = payment confirmation
+
+            db
+                .collection('users')
+                .doc(user?.uid)
+                .collection('orders')
+                .doc(paymentIntent.id)
+                .set({
+                    basket: basket,
+                    amount: paymentIntent.amount,
+                    created: paymentIntent.created
+                })
+
+
             setSecceeded(true);
             setError(null);
             setProcessing(false);
 
+            dispatch({
+                type: 'EMPTY_BASKET'
+            })
+
+
+
             history.replace('/orders')
-        })
+        }).catch(err => console.log('something went wrong'))
 
     }
 
@@ -110,7 +130,7 @@ function Payment() {
                             <div className="payment__priceContainer">
                                 <CurrencyFormat
 
-                                    renderText={(value) =>(
+                                    renderText={(value) => (
 
                                         <h3>Order Total: {value}</h3>
                                     )}
