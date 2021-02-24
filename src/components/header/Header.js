@@ -30,6 +30,7 @@ function Header() {
                 <input
                     className="header__searchInput"
                     type="type"
+                    placeholder="Search products, brands and categories"
                 />
                 <SearchIcon className="header__searchIcon" />
             </div>
@@ -40,8 +41,8 @@ function Header() {
                         onClick={handleAuthentication}
                         className="header__option">
                         <span className="header__optionLineOne">
-                            Hello {user?.email}
-                    </span>
+                            Hello {!user ? "Guest" : user?.email}
+                      </span>
                         <span className="header__optionLineTwo">
                             {user ? 'sign out' : 'sign in'}
                     </span>

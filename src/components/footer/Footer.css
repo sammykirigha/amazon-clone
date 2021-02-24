@@ -1,0 +1,230 @@
+.footer {
+    width: 100%;
+    height: 550px;
+    display: flex;
+     background-color: #3b4147;
+     flex-direction: column;
+     margin-bottom: 20px;
+}
+
+.footer__up {
+  background-color: #131921;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__image {
+    width: 250px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    display: flex;
+   justify-content: center;
+
+}
+
+
+.footer__new {
+    color: white;
+    margin-top: 30px;
+}
+
+.footer__new h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+
+.footer__new p {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.footer__subscribe {
+    display: flex;
+}
+
+.footer__subscribe input {
+    border: 1px solid white;
+    border-radius: 3px;
+    height: 20px;
+    width: 90%;
+    margin-right: 5px;
+}
+
+.footer__subscribe input:hover {
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 3px;
+}
+
+.footer__subscribe button {
+    background-color: #131921;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-right: 5px;
+
+}
+
+.footer__subscribe button:hover {
+    cursor: pointer;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #dda820;
+}
+
+.footer__logo {
+    width: 100px;
+    object-fit: contain;
+    margin-right: 3px;
+    margin-top: -20px;
+}
+
+.footer__icon {
+    color: white;
+    margin-top: 20px;
+}
+
+
+.footer__down {
+   background-color: #1b1f2428; 
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.footer__downloadApp {
+    margin-top: 30px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__download {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__downloadIcon {
+    background-color: #dda820;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 40px;
+    height: 35px;
+    color: #dda820;
+}
+
+.footer__downloadSentiments h2 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer__downloadSentiments p {
+    color: white;
+    font-size: 12px;
+}
+
+.footer__appLinks{
+    margin-top: 10px;
+
+}
+
+.footer__links {
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    object-fit: contain;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+.footer__links:hover {
+   cursor: pointer;
+   border-color: #a88734 #9c7e31 #846a29;
+   color: #dda820;
+}
+
+.footer__helpYou h2 {
+    margin-top: 10px;
+   color: white;
+   font-size: 18px;
+   font-weight: 500;
+}
+
+.footer__helpYou ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    
+}
+
+.footer__helpYou ul a li{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+
+.footer__about h2 {
+    margin-top: 10px;
+   color: white;
+   font-size: 18px;
+   font-weight: 500;
+
+}
+
+.footer__about ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.footer__about ul li {
+    color: white;
+    font-size: 14px;
+}
+
+.footer__makeMoney h2 {
+    margin-top: 10px;
+   color: white;
+   font-size: 18px;
+   font-weight: 500;
+
+}
+
+.footer__makeMoney ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.footer__makeMoney ul li {
+    color: white;
+    font-size: 14px;
+}
+
+.footer__international h2 {
+margin-top: 10px;
+   color: white;
+   font-size: 18px;
+   font-weight: 500;
+}
+
+.footer__international ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.footer__international ul li {
+    color: white;
+    font-size: 14px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+

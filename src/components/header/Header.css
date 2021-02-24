@@ -26,10 +26,13 @@
     height: 12px;
     padding: 10px;
     border: none;
+    border-radius: 5px;
     width: 100%;
 }
 
 .header__searchIcon {
+    border: none;
+    border-radius: 3px;
     padding: 5px;
     height: 22px !important;
     background-color: #cd9042;
